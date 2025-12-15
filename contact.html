@@ -1,54 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio</title>
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EndingVoid | Contact</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+<nav class="navbar">
+      <div class="logo"><a href="index.html">EndingVoid</a></div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="Projects.html">Projects</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
 
-  <nav class="navbar">
-    <div class="logo">EndingVoid</div>
+    <main class="container">
+      <section>
+        <h1>Contact / Feedback</h1>
+        <p class="muted">If you spot something I could improve, please let me know — I’m always learning.</p>
 
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="Projects.html">Projects</a></li>
-      <li><a href="skills.html">Skills</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+        <form class="form" action="#" method="post">
+          <label>
+            Your name
+            <input type="text" name="name" placeholder="e.g., Alex" required />
+          </label>
 
-  <h1>Welcome to My Portfolio</h1>
-  <p>Explore my projects and skills as a developer.</p>
-  <p>Please note that I'm only a beginner and this website is made from pure HTML, CSS and JS.</p>
+          <label>
+            Your email
+            <input type="email" name="email" placeholder="e.g., alex@email.com" required />
+          </label>
 
-</body>
+          <label>
+            Message
+            <textarea name="message" rows="6" placeholder="Tell me what you'd improve..." required></textarea>
+          </label>
+
+          <button class="btn" type="submit">Send</button>
+          <p class="muted small">This form is currently a placeholder until you connect it to a backend.</p>
+        </form>
+      </section>
+
+    </main>
+
+<footer class="footer">
+      <p>&copy; 2025 EndingVoid. All rights reserved.</p>
+    </footer>
+  </body>
 </html>
-    <section id="about">
-        <h1>About Me</h1>
-        <p>Welcome to my portfolio! I'm EndingVoid, a passionate developer with a love for creating innovative solutions.</p>
-    </section>
-    
-    <section id="projects">
-        <h1>Projects</h1>
-        <ul>
-        <li>Project A - A web application for task management.</li>
-        <li>Project B - An e-commerce platform for handmade crafts.</li>
-        <li>Project C - A mobile app for fitness tracking.</li>
-        </ul>
-    </section>
-    
-    <section id="plans">
-        <h1>Skills</h1>
-        <ul>
-        <li>JavaScript, HTML, CSS</li>
-        <li>Python, Django</li>
-        <li>React, Node.js</li>
-        </ul>
-    </section>
-    
-    <section id="contact">
-        <h1>Contact Me</h1>
-        <p>You can reach me at
