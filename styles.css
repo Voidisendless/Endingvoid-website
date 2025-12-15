@@ -301,31 +301,53 @@ footer p {
 
 /* Better link style in text */
 .about-card a {
-  color: #38bdf8;
+  color: #195772;
   text-decoration: none;
   border-bottom: 1px solid rgba(56, 189, 248, 0.5);
 }
 
+
 .about-card a:hover {
-  border-bottom-color: #38bdf8;
+  border-bottom-color: #32464e;
 }
 
 /* Button */
 .btn {
   display: inline-block;
   margin-top: 1rem;
-  padding: 0.75rem 1rem;
+  padding: 0.75rem 1.25rem;
   border-radius: 10px;
-  background: #007efc;
+
+  background: linear-gradient(
+    135deg,
+    #38bdf8,
+    #0ea5e9
+  );
+
+  color: #0b1220;
   text-decoration: none;
   font-weight: 800;
-  transition: transform 0.15s ease, opacity 0.15s ease;
+  letter-spacing: 0.3px;
+
+  box-shadow: 0 6px 18px rgba(56, 189, 248, 0.25);
+
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease,
+    filter 0.15s ease;
 }
 
 .btn:hover {
   transform: translateY(-2px);
-  opacity: 0.95;
+  box-shadow: 0 10px 26px rgba(56, 189, 248, 0.35);
+  filter: brightness(1.05);
 }
+
+.btn:active {
+  transform: translateY(0);
+  box-shadow: 0 6px 18px rgba(56, 189, 248, 0.25);
+}
+
 .skills {
   max-width: 70ch;
 }
@@ -368,4 +390,60 @@ footer p {
 .level {
   font-size: 0.9rem;
   color: #94a3b8;
+}
+/* Flip Card (project -> github on hover) */
+.flip-card {
+  perspective: 1000px;
+  padding: 0;        /* inner faces handle padding */
+  overflow: hidden;  /* keeps rounded corners clean */
+}
+
+.flip-inner {
+  position: relative;
+  width: 100%;
+  min-height: 160px; /* adjust if you want taller cards */
+  transform-style: preserve-3d;
+  transition: transform 0.6s ease;
+}
+
+.flip-card:hover .flip-inner,
+.flip-card:focus-within .flip-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-front,
+.flip-back {
+  position: absolute;
+  inset: 0;
+  padding: 1.25rem; /* matches your original .project-card padding */
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.flip-front {
+  background: transparent; /* project-card supplies background */
+}
+
+.flip-back {
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.repo-btn {
+  margin-top: auto;
+  display: inline-block;
+  padding: 0.75rem 1rem;
+  border-radius: 10px;
+  background: #38bdf8;
+  color: #0b1220;
+  text-decoration: none;
+  font-weight: 800;
+  transition: transform 0.15s ease, opacity 0.15s ease;
+}
+
+.repo-btn:hover {
+  transform: translateY(-2px);
+  opacity: 0.95;
 }
