@@ -223,3 +223,149 @@ footer p {
   margin-bottom: 1.1rem;
   line-height: 1.75;
 }
+
+.projects h1 {
+  margin-bottom: 0.5rem;
+}
+
+.projects p {
+  margin-bottom: 1.5rem;
+  color: #cbd5f5;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.project-card {
+  background: #111c33;
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  border-radius: 12px;
+  padding: 1.25rem;
+  transition: transform 0.15s ease, border-color 0.15s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(56, 189, 248, 0.6);
+}
+
+.project-card h2 {
+  margin-bottom: 0.5rem;
+  font-size: 1.15rem;
+}
+
+.project-card p {
+  margin-bottom: 0;
+  line-height: 1.6;
+  color: #e5e7eb;
+}
+
+@media (max-width: 768px) {
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.to-do {
+  margin-top: 5rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(148, 163, 184, 0.2);
+}
+.to-do h1 {
+  margin-bottom: 1rem;
+}
+.about {
+  max-width: 70ch;
+}
+
+.about-header h1 {
+  margin-bottom: 0.5rem;
+  font-size: 2.4rem;
+}
+
+.subtitle {
+  color: #cbd5f5;
+  margin-bottom: 1.75rem;
+  line-height: 1.6;
+}
+
+/* Card look */
+.about-card {
+  background: #111c33;
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  border-radius: 14px;
+  padding: 1.5rem;
+}
+
+/* Better link style in text */
+.about-card a {
+  color: #38bdf8;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(56, 189, 248, 0.5);
+}
+
+.about-card a:hover {
+  border-bottom-color: #38bdf8;
+}
+
+/* Button */
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1rem;
+  border-radius: 10px;
+  background: #007efc;
+  text-decoration: none;
+  font-weight: 800;
+  transition: transform 0.15s ease, opacity 0.15s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  opacity: 0.95;
+}
+.skills {
+  max-width: 70ch;
+}
+
+.subtitle {
+  color: #cbd5f5;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.skills-card {
+  background: #111c33;
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  border-radius: 14px;
+  padding: 1.25rem;
+}
+
+.skills-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.skills-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.85rem 1rem;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(148, 163, 184, 0.12);
+}
+
+.skill {
+  font-weight: 700;
+}
+
+.level {
+  font-size: 0.9rem;
+  color: #94a3b8;
+}

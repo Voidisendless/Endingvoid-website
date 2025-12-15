@@ -1,40 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio</title>
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">EndingVoid</div>
 
-  <nav class="navbar">
-    <div class="logo">EndingVoid</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="Projects.html">Projects</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <main class="container">
+      <section class="projects">
+        <h1>Projects</h1>
+        <p>Projects and things I have created so far.</p>
 
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="Projects.html">Projects</a></li>
-      <li><a href="skills.html">Skills</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
-    <section id="projects">
-        <h2>Projects and things I have created so far!</h2>
-        <ul>
-        <li>Project A - This website</li>
-        <li>Project B - The website for scpoccasions.xyz</li>
-        <li>Project C - A pterodactyl game panel running 3 SCP:SL Servers.</li>
-        <li>Project D - A Pihole that runs my main devices network</li>
-        </ul>
-    </section>
+        <div class="project-grid">
+          <article class="project-card">
+            <h2>This website</h2>
+            <p>My portfolio built with plain HTML, CSS, and JavaScript.</p>
+          </article>
 
-    <section class="to-do">
+          <article class="project-card">
+            <h2>scpoccasions.xyz</h2>
+            <p>A website I built for scpoccasions.xyz.</p>
+          </article>
+
+          <article class="project-card">
+            <h2>Pterodactyl game panel</h2>
+            <p>A panel running 3 SCP:SL servers.</p>
+          </article>
+
+          <article class="project-card">
+            <h2>Pi-hole setup</h2>
+            <p>Pi-hole running my main devices network.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="to-do">
         <h2>Upcoming Projects and Plans</h2>
-        <p>At the moment I don't have any projects i would like to get done or any specific application I would like to build.</p>
-        <p>However, I am always open to suggestions! If you have any ideas for projects or applications that you think would be interesting or useful, please feel free to reach out to me through the contact section.</p>
-        <p>I think my next step would to be building this website again using libraries for Javascript and CSS</p>
-    </section>
-
-</body>
+        <p>
+          At the moment I don’t have a specific application I want to build
+          next, but I’m always open to ideas and suggestions.
+        </p>
+        <p>
+          My next step may be rebuilding this website using libraries/frameworks
+          to learn a more modern workflow.
+        </p>
+      </section>
+    </main>
+    <footer class="footer">
+      <p>&copy; 2025 EndingVoid. All rights reserved.</p>
+    </footer>
+  </body>
 </html>
