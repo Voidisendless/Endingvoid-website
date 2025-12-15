@@ -37,7 +37,7 @@ body {
   color: #94a3b8;
 }
 
-}
+
 h1, h2, h3 {
     margin-bottom: 15px;
 }
@@ -210,4 +210,16 @@ footer p {
 .error {
   margin-top: 1rem;
   color: #f87171;
+}
+.about {
+  max-width: 65ch;
+}
+
+.about h1 {
+  margin-bottom: 1rem;
+}
+
+.about p {
+  margin-bottom: 1.1rem;
+  line-height: 1.75;
 }
